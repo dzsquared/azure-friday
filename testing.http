@@ -1,0 +1,12 @@
+GET http://localhost:7071/api/cars
+
+###
+POST http://localhost:7071/api/cars
+Content-Type: application/json
+
+{
+    "Make": "Ford",
+    "Model": "Ranger",
+    "Year": 2020,
+    "Color": "Black"
+}
