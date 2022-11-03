@@ -1,4 +1,4 @@
-# Local Development with Azure SQL DB and Azure Functions Demo
+# Local Development with Azure SQL Database and Azure Functions Demo
 
 Basic .NET API for adding and reading items from Azure SQL Database.
 
