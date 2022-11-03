@@ -13,7 +13,7 @@ namespace Azure.Samples
 {
     public static class Cars
     {
-        // Visit https://aka.ms/sqlbindingsinput to learn how to use this input binding
+        // Returns list of cars
         [FunctionName("GetCars")]
         public static IActionResult RunGetCars(
             [HttpTrigger(AuthorizationLevel.Function, "get", Route = "cars")] HttpRequest req,
@@ -27,7 +27,7 @@ namespace Azure.Samples
             return new OkObjectResult(result);
         }
 
-        // Visit https://aka.ms/sqlbindingsoutput to learn how to use this output binding
+        // Inserts a new car
         [FunctionName("AddCar")]
         public static async Task<ObjectResult> RunAddCar(
             [HttpTrigger(AuthorizationLevel.Function, "post", Route = "cars")] HttpRequest req,
