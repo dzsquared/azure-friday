@@ -40,3 +40,10 @@ jobs:
           slot-name: 'Production'
           package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/output'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5A8EB39346B94CF38D55C09B0E6E1173 }}
+
+      - name: 'deploy database'
+        uses: Azure/sql-action@v2
+        with:
+          connection-string: ${{ secrets.AZURE_SQL }}
+          path: 'sql/cars-demo/cars-demo.sqlproj'
+          action: 'publish'
