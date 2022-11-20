@@ -8,5 +8,5 @@ Basic .NET API for adding and reading items from Azure SQL Database.
 
 ## Learn More
 
--[https://aka.ms/azuredbemulator](https://aka.ms/azuredbemulator)
--[https://github.com/azure/sql-action](https://github.com/azure/sql-action)
+- [https://aka.ms/azuredbemulator](https://aka.ms/azuredbemulator)
+- [https://github.com/azure/sql-action](https://github.com/azure/sql-action)
